@@ -87,7 +87,8 @@ https://yq.aliyun.com/articles/609917)
     2. 所以在外链css加载完之前，页面无法进行首次渲染
 4. DOM && js && css
     1. 外链js与外链css的顺序会影响页面的渲染。当解析器获取到一个script标签，DOM将无法继续构建直到JavaScript执行完毕，而**JavaScript在CSS下载完，解析完，并且CSSOM可以使用的时候，JavaScript才能执行**
-     ![cd0ba84a57b827900a71431b9acafd87.png](en-resource://database/1713:1)
+    
+     ![resourceLoad](https://github.com/LDWX/noteBook/blob/master/images/resourceLoad.png)
     
     2. 当body中js之前的外链css为加载完之前，页面不会进行首次渲染
     3. 当body中js之前的外链css加载完成后，js之前的DOM树和css进行合并，并将该js之前的DOM结构进行首次页面渲染
