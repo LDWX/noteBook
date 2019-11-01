@@ -87,7 +87,7 @@ https://yq.aliyun.com/articles/609917)
     2. 所以在外链css加载完之前，页面无法进行首次渲染
 4. DOM && js && css
     1. 外链js与外链css的顺序会影响页面的渲染。当解析器获取到一个script标签，DOM将无法继续构建直到JavaScript执行完毕，而**JavaScript在CSS下载完，解析完，并且CSSOM可以使用的时候，JavaScript才能执行**    
-     ![resourceLoad](images/resourceLoad.png)    
+     ![resourceLoad.png](/images/resourceLoad.png)    
     2. 当body中js之前的外链css为加载完之前，页面不会进行首次渲染
     3. 当body中js之前的外链css加载完成后，js之前的DOM树和css进行合并，并将该js之前的DOM结构进行首次页面渲染
 
@@ -120,7 +120,7 @@ https://yq.aliyun.com/articles/609917)
 
 ### 资源下载
 2008开始，浏览器可以异步对外链资源进行下载（js, css, image），但是js的执行还是同步的
-![resourceDownload.png](images/resourceDownload.png)同步的脚本总是比异步的脚本拥有更高的优先级。视口中可见的图像会比那些底下的图片先下载完。
+![resourceDownload.png](/images/resourceDownload.png)同步的脚本总是比异步的脚本拥有更高的优先级。视口中可见的图像会比那些底下的图片先下载完。
 
 # defer与async区别
 
@@ -131,7 +131,7 @@ https://www.zcfy.cc/article/building-the-dom-faster-speculative-parsing-async-de
 
 ### 示意图：
 
- ![defer&async](images/defer与async.png)
+ ![defer&async](/images/defer与async.png)
 
 ### 什么都不加
 ```JavaScript
